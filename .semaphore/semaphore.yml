@@ -1,0 +1,56 @@
+version: v1.0
+
+name: Build and test Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+
+#global_job_config:
+
+  #prologue:
+  #  commands:
+  #    - echo $DOCKER_TOKEN | docker login --username "$DOCKER_USERNAME" --password-stdin
+
+  #env_vars:
+  #  - name: DOCKER_USERNAME
+  #    value: sineverba
+  #  - name: DOCKER_IMAGE
+  #    value: cfhookbash
+
+blocks:
+  - name: Install dependencies
+    #skip:
+    #  when: "tag =~ '.*'"
+    task:
+      prologue:
+        commands:
+          - sem-version node 12
+      jobs:
+        - name: 'Tests'
+          commands:
+            - node --version
+            - checkout
+            - cache restore
+            - npm install
+            - cache store
+
+  - name: Test
+    task:
+      prologue:
+        commands:
+          - checkout
+          - cache restore
+      jobs:
+        - name: Test
+          commands:
+            - npm run test
+
+      #secrets:
+      #  - name: DOCKER_TOKEN
+
+#promotions:
+#  - name: Deploy
+#    pipeline_file: deploy.yml
+#    auto_promote:
+#      when: "result = 'passed' and tag =~ '.*'"
