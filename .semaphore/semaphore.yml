@@ -54,6 +54,17 @@ blocks:
             - sem-version node $NODE_VERSION
             - node --version
             - npm run test
+
+  - name: Coverage
+    task:
+      prologue:
+        commands:
+          - checkout
+          - cache restore
+      jobs:
+        - name: Coverage
+          commands:
+            - sem-version node 14
             - npm run cover
             - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
 
