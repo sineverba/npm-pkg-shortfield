@@ -23,12 +23,16 @@ blocks:
     #skip:
     #  when: "tag =~ '.*'"
     task:
-      prologue:
-        commands:
-          - sem-version node 12
+      #prologue:
+      #  commands:
+      #    - sem-version node 12
       jobs:
-        - name: 'Tests'
+        - name: 'Install'
+          matrix:
+            - env_var: NODE_VERSION
+              values: [ "10", "11", "12", "13", "14" ]
           commands:
+            - sem-version node $NODE_VERSION
             - node --version
             - checkout
             - cache restore
@@ -43,7 +47,12 @@ blocks:
           - cache restore
       jobs:
         - name: Test
+          matrix:
+            - env_var: NODE_VERSION
+              values: [ "10", "11", "12", "13", "14" ]
           commands:
+            - sem-version node $NODE_VERSION
+            - node --version
             - npm run test
 
       #secrets:
