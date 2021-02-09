@@ -3,4 +3,5 @@
 + Add README stub
 + Add Semaphore integration
 + Merging in master
-+ Add Matrix to Semaphore
++ Add matrix to Semaphore
++ Remove LTS from matrix

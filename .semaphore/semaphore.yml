@@ -30,7 +30,7 @@ blocks:
         - name: 'Install'
           matrix:
             - env_var: NODE_VERSION
-              values: [ "10", "11", "12", "13", "14", "lts" ]
+              values: [ "10", "11", "12", "13", "14" ]
           commands:
             - sem-version node $NODE_VERSION
             - node --version
@@ -49,7 +49,7 @@ blocks:
         - name: Test
           matrix:
             - env_var: NODE_VERSION
-              values: [ "10", "11", "12", "13", "14", "lts" ]
+              values: [ "10", "11", "12", "13", "14" ]
           commands:
             - sem-version node $NODE_VERSION
             - node --version
