@@ -67,11 +67,11 @@ blocks:
           - checkout
           - cache restore
       jobs:
-       - name: Coverage
-          commands:
-            - sem-version node 12
-            - npm run cover
-            - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+      - name: Coverage
+        commands:
+          - sem-version node 12
+          - npm run cover
+          - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
 
       secrets:
         - name: COVERALLS_SHORTFIELD_REPO_TOKEN
