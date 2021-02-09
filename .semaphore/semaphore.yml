@@ -75,7 +75,7 @@ blocks:
 
       secrets:
         - name: COVERALLS_SHORTFIELD_REPO_TOKEN
-        
+
   - name: Deploy
     task:
       jobs:
@@ -86,8 +86,8 @@ blocks:
             - npm build
             - npm publish
 
-    secrets:
-      - name: NPM_TOKEN
+      secrets:
+        - name: NPM_TOKEN
 
 #promotions:
 #  - name: Deploy
