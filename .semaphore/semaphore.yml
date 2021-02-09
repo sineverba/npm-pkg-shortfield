@@ -6,26 +6,14 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 
-#global_job_config:
-
-  #prologue:
-  #  commands:
-  #    - echo $DOCKER_TOKEN | docker login --username "$DOCKER_USERNAME" --password-stdin
-
-  #env_vars:
-  #  - name: DOCKER_USERNAME
-  #    value: sineverba
-  #  - name: DOCKER_IMAGE
-  #    value: cfhookbash
+global_job_config:
+  secrets:
+    - name: COVERALLS_SHORTFIELD_REPO_TOKEN
+    - name: NPM_TOKEN
 
 blocks:
   - name: Install dependencies
-    #skip:
-    #  when: "tag =~ '.*'"
     task:
-      #prologue:
-      #  commands:
-      #    - sem-version node 12
       jobs:
         - name: 'Install'
           matrix:
@@ -62,17 +50,17 @@ blocks:
           - checkout
           - cache restore
       jobs:
-        - name: Coverage
-          commands:
-            - sem-version node 14
-            - npm run cover
-            - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+      - name: Coverage
+        commands:
+          - sem-version node 12
+          - npm run cover
+          - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
 
-      secrets:
-        - name: COVERALLS_SHORTFIELD_REPO_TOKEN
+      #secrets:
+      #  - name: COVERALLS_SHORTFIELD_REPO_TOKEN
 
-#promotions:
-#  - name: Deploy
-#    pipeline_file: deploy.yml
-#    auto_promote:
-#      when: "result = 'passed' and tag =~ '.*'"
+promotions:
+  - name: Deploy
+    pipeline_file: deploy.yml
+    auto_promote:
+      when: "result = 'passed' and tag =~ '.*'"
