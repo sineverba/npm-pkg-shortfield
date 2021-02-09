@@ -6,6 +6,11 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 
+global_job_config:
+  secrets:
+    - name: COVERALLS_SHORTFIELD_REPO_TOKEN
+    - name: NPM_TOKEN
+
 blocks:
   - name: Install dependencies
     task:
@@ -51,8 +56,8 @@ blocks:
           - npm run cover
           - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
 
-      secrets:
-        - name: COVERALLS_SHORTFIELD_REPO_TOKEN
+      #secrets:
+      #  - name: COVERALLS_SHORTFIELD_REPO_TOKEN
 
 promotions:
   - name: Deploy
