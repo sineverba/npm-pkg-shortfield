@@ -1,2 +1,3 @@
-# 0.1.0
-+ First version
+# Next version
++ First commit
++ Add README stub
