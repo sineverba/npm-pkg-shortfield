@@ -6,3 +6,4 @@
 + Add matrix to Semaphore
 + Remove LTS from matrix
 + Add coverage
++ Rename coverall env var
