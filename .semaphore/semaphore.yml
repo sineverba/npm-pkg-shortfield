@@ -54,9 +54,11 @@ blocks:
             - sem-version node $NODE_VERSION
             - node --version
             - npm run test
+            - npm run cover
+            - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
 
-      #secrets:
-      #  - name: DOCKER_TOKEN
+      secrets:
+        - name: COVERALLS_REPO_TOKEN
 
 #promotions:
 #  - name: Deploy

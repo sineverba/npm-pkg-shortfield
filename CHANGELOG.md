@@ -5,3 +5,4 @@
 + Merging in master
 + Add matrix to Semaphore
 + Remove LTS from matrix
++ Add coverage
