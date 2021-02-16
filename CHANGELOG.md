@@ -9,3 +9,4 @@
 + Rename coverall env var
 + Set deploy
 + Fix issue with npm token env var
++ Complete truncate
