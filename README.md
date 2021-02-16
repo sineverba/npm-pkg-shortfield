@@ -1,5 +1,7 @@
 | CI / CD | Status |
 | ------- | ------ |
+| NPM | [![npm version](https://badge.fury.io/js/shortfield.svg)](https://badge.fury.io/js/shortfield) |
+| Semaphore CI | [![Build Status](https://sineverba.semaphoreci.com/badges/npm-pkg-shortfield/branches/master.svg)](https://sineverba.semaphoreci.com/projects/npm-pkg-shortfield) |
 | Coverall | [![Coverage Status](https://coveralls.io/repos/github/sineverba/npm-pkg-shortfield/badge.svg?branch=master)](https://coveralls.io/github/sineverba/npm-pkg-shortfield?branch=master) |
 
 `short field` returns a string truncated after 10 characters, concatenated with "..." (three dots).
