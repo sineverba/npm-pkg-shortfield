@@ -2,11 +2,11 @@
 | ------- | ------ |
 | Coverall | [![Coverage Status](https://coveralls.io/repos/github/sineverba/npm-pkg-shortfield/badge.svg?branch=master)](https://coveralls.io/github/sineverba/npm-pkg-shortfield?branch=master) |
 
-`short field` returns a string truncated after X characters, concatenated with "..." (three dots).
+`short field` returns a string truncated after 10 characters, concatenated with "..." (three dots).
 
 Useful in tables with long strings.
 
-E.g. "This is a very long string" will return ""
+E.g. "This is a long string" will return "This is a ..."
 
 ## Installation
 `npm install shortfield`
@@ -16,7 +16,7 @@ E.g. "This is a very long string" will return ""
 ```js
 var shortener = require('shortfield');
 var shorted = shortener("This is a long string");
-console.log(shorted); // returns 
+console.log(shorted); // returns This is a ...
 ```
 
 ## Tests
