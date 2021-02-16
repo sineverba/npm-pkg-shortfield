@@ -1,5 +1,6 @@
-# Next version
+# 0.3.0
 + Add badges
++ Add custom length
 
 ## 0.2.0
 + Fix issue with npm token env var

@@ -22,4 +22,16 @@ describe('#shortener', function() {
         var result = shortener(originalString);
         expect(result).to.equal("This is a ...");
     });
+
+    it('Should return truncated string of 20 chars length', function() {
+        var originalString = "This is a very long string";
+        var result = shortener(originalString, 20);
+        expect(result).to.equal("This is a very long ...");
+    });
+
+    it('Should return truncated string of 4 chars length', function() {
+        var originalString = "This is a very long string";
+        var result = shortener(originalString, 4);
+        expect(result).to.equal("This...");
+    });
 })

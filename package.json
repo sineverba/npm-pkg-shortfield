@@ -1,6 +1,6 @@
 {
   "name": "shortfield",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Make short a long string, concatenated with three dots",
   "main": "index.js",
   "repository": {

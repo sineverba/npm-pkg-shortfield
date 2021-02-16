@@ -2,16 +2,16 @@
 
 /**
  * 
- * @param {*} startString 
+ * @param {*} startString The start string
+ * @param {*} intLength The needed length
  */
-const getShortString = (startString) => {
-    const maxLengthString = 10;
+const getShortString = (startString, intLength = 10) => {
     if (!startString) {
         throw new Error('Missing startString');
     }
     const stringLength = startString.length;
-    if (stringLength > maxLengthString) {
-        return `${startString.substring(0, maxLengthString)}...`;
+    if (stringLength > intLength) {
+        return `${startString.substring(0, intLength)}...`;
     }
     return startString;
 }
