@@ -17,7 +17,7 @@ E.g. "This is a long string" will return "This is a ..."
 
 ```js
 var shortener = require('shortfield');
-var shorted = shortener("This is a long string");
+var shorted = shortener("This is a long string"); // default length is 10
 console.log(shorted); // returns This is a ...
 
 var shorted = shortener("This is a long string", 4);
