@@ -1,4 +1,7 @@
-# 0.2.0
+# Next version
++ Add badges
+
+## 0.2.0
 + Fix issue with npm token env var
 + Complete truncate
 
