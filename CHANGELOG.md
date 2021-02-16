@@ -1,4 +1,7 @@
-# 0.3.0
+# Next version
++ Set default node version
+
+## 0.3.0
 + Add badges
 + Add custom length
 
