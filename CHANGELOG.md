@@ -1,4 +1,4 @@
-# Next version
+# 1.0.0
 + Set default node version
 + Change test suite
 + Add Circle CI
