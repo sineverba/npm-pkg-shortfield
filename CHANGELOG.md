@@ -2,6 +2,7 @@
 + Set default node version
 + Change test suite
 + Add Circle CI
++ Add ESLint
 
 ## 0.3.0
 + Add badges
