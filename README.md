@@ -2,6 +2,7 @@
 | ------- | ------ |
 | NPM | [![npm version](https://badge.fury.io/js/shortfield.svg)](https://badge.fury.io/js/shortfield) |
 | Semaphore CI | [![Build Status](https://sineverba.semaphoreci.com/badges/npm-pkg-shortfield/branches/master.svg)](https://sineverba.semaphoreci.com/projects/npm-pkg-shortfield) |
+| Circle CI | [![CircleCI](https://circleci.com/gh/sineverba/npm-pkg-shortfield.svg?style=svg)](https://circleci.com/gh/sineverba/npm-pkg-shortfield) |
 | Coverall | [![Coverage Status](https://coveralls.io/repos/github/sineverba/npm-pkg-shortfield/badge.svg?branch=master)](https://coveralls.io/github/sineverba/npm-pkg-shortfield?branch=master) |
 
 `shortfield` returns a string truncated after X characters (default 10), concatenated with "..." (three dots).
