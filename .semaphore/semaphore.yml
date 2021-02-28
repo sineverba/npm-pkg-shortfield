@@ -36,6 +36,7 @@ blocks:
           commands:
             - sem-version node $NODE_VERSION
             - node --version
+            - npm run pretest
             - npm run test
 
   - name: Coverage
