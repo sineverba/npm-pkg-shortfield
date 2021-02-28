@@ -1,6 +1,6 @@
 {
   "name": "shortfield",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Make short a long string, concatenated with three dots",
   "main": "index.js",
   "repository": {
@@ -8,9 +8,12 @@
     "url": "https://github.com/sineverba/npm-pkg-shortfield.git"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha --reporter spec",
-    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+    "pretest": "eslint .",
+    "fix": "eslint --fix .",
+    "test": "npx nyc mocha",
+    "cover": "npx nyc --reporter=lcov mocha"
   },
+  "eslintIgnore": ["test/*", ".eslintrc.js"],
   "engines": {
     "node": ">=10"
   },
@@ -27,7 +30,10 @@
   "devDependencies": {
     "chai": "^4.3.0",
     "coveralls": "^3.1.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^8.2.1"
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.3.0",
+    "nyc": "^15.1.0"
   }
 }
