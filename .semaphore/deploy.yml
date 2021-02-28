@@ -12,7 +12,6 @@ blocks:
       jobs:
         - name: Deploy
           commands:
-            #- sem-version node 12
             - checkout
             - mv npmrc.txt .npmrc
             - npm build

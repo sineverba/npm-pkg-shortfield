@@ -26,6 +26,6 @@ console.log(shorted); // returns This...
 
 ## Tests
 
-`npm test` for simple test
+`npm run test` for simple test
 
-`npm cover` for coverage
+`npm run cover` for coverage

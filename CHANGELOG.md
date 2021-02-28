@@ -1,5 +1,6 @@
 # Next version
 + Set default node version
++ Change test suite
 
 ## 0.3.0
 + Add badges
