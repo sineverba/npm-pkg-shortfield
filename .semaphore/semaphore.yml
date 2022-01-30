@@ -36,8 +36,6 @@ blocks:
               values: [ "10", "12", "14", "16" ]
           commands:
             - sem-version node $NODE_VERSION
-            - node --version
-            - npm run pretest
             - npm run test
 
   - name: Coverage
