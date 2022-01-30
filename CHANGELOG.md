@@ -1,4 +1,7 @@
-# 1.1.0
+# 1.1.1
++ Fix unable to publish
+
+## 1.1.0
 + Add Sonarqube
 + Upgrade dependencies
 + Remove eslint
