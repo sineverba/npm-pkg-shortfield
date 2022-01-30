@@ -1,4 +1,9 @@
-# 1.0.0
+# 1.1.0
++ Add Sonarqube
++ Upgrade dependencies
++ Remove eslint
+
+## 1.0.0
 + Set default node version
 + Change test suite
 + Add Circle CI
