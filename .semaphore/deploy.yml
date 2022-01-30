@@ -4,7 +4,7 @@ name: Deploy to NPM pipeline
 agent:
   machine:
     type: e1-standard-2
-    os_image: ubuntu1804
+    os_image: ubuntu2004
 
 blocks:
   - name: Deploy
@@ -14,7 +14,6 @@ blocks:
           commands:
             - checkout
             - mv npmrc.txt .npmrc
-            - npm build
             - npm publish
 
       secrets:
