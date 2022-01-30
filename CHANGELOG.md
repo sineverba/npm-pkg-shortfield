@@ -1,4 +1,8 @@
-# 1.0.0
+# Next vesion
++ Add Sonarqube
++ Upgrade dependencies
+
+## 1.0.0
 + Set default node version
 + Change test suite
 + Add Circle CI
