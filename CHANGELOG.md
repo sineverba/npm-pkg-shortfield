@@ -1,6 +1,7 @@
 # Next vesion
 + Add Sonarqube
 + Upgrade dependencies
++ Remove eslint
 
 ## 1.0.0
 + Set default node version
