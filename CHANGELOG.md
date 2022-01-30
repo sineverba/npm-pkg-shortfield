@@ -1,4 +1,4 @@
-# Next vesion
+# 1.1.0
 + Add Sonarqube
 + Upgrade dependencies
 + Remove eslint
