@@ -37,5 +37,6 @@ console.log(shorted); // returns This...
 + Spin images `docker-compose up -d`
 + Create a new project inside Sonarqube and grab the token
 + Replace the token in the ENV var of `docker-compose.yml` file
++ Replace the URL in the ENV var of `docker-compose.yml` file (optional, only if you change docker-compose or use your own Sonarqube)
 + Stop with `docker-compose stop` and restart with `docker-compose up -d`
 + Next spin with `make sonar`
