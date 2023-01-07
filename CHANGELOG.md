@@ -1,4 +1,8 @@
-# 1.1.1
+# 1.2.0
++ Refactor Semaphore
++ Upgrade dependencies + Dropped support for Node 10
+
+## 1.1.1
 + Fix unable to publish
 
 ## 1.1.0
