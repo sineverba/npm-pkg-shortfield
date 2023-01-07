@@ -12,7 +12,7 @@
     "cover": "npx nyc --reporter=lcov mocha"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "keywords": [
     "npm",
@@ -25,10 +25,10 @@
     "access": "public"
   },
   "devDependencies": {
-    "chai": "^4.3.6",
+    "chai": "^4.3.7",
     "coveralls": "^3.1.1",
-    "mocha": "^9.2.0",
-    "npm-check-updates": "^12.2.1",
+    "mocha": "^10.2.0",
+    "npm-check-updates": "^16.6.2",
     "nyc": "^15.1.0"
   }
 }
