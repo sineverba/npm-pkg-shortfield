@@ -55,7 +55,7 @@ blocks:
       - name: Sonarcloud
         commands:
           - npm run cover
-          - docker run --rm -e SONAR_HOST_URL="https://sonarcloud.io" -e SONAR_LOGIN=$SONAR_TOKEN -v "/home/semaphore/npm-pkg-shortfield:/usr/src" sonarsource/sonar-scanner-cli:4.6
+          - docker run --rm -e SONAR_HOST_URL="https://sonarcloud.io" -e SONAR_LOGIN=$SONAR_TOKEN -v "/home/semaphore/npm-pkg-shortfield:/usr/src" sonarsource/sonar-scanner-cli:4.8.0
 
 promotions:
   - name: Deploy
