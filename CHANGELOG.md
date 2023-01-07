@@ -1,5 +1,6 @@
 # Next version
 + Refactor Semaphore
++ Upgrade dependencies
 
 ## 1.1.1
 + Fix unable to publish
