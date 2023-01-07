@@ -1,4 +1,4 @@
-# Next version
+# 1.2.0
 + Refactor Semaphore
 + Upgrade dependencies + Dropped support for Node 10
 
