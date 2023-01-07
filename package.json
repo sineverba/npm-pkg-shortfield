@@ -12,7 +12,7 @@
     "cover": "npx nyc --reporter=lcov mocha"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "keywords": [
     "npm",
