@@ -1,5 +1,6 @@
 # Next version
 + Upgrade dependencies
++ Move to TypeScript
 
 ## 1.2.0
 + Refactor Semaphore
