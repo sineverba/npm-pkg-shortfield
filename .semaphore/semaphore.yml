@@ -44,6 +44,8 @@ blocks:
             - npm run test
 
   - name: Coverage
+    skip:
+      when: "tag =~ '.*'"
     task:
       prologue:
         commands:
