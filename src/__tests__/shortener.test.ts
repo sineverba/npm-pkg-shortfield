@@ -1,7 +1,7 @@
 import { Shortener } from "../index";
 
 describe("Test Shortener", () => {
-  it('Should throws error if missing param', () => {
+  it("Should throws error if missing param", () => {
     /**
      * Suppress the error
      */
