@@ -5,7 +5,7 @@
  */
 export const Shortener = (startString: string, intLength: number = 10) => {
   if (!startString) {
-    throw new Error('Missing startString');
+    throw new Error("Missing startString");
   }
   const stringLength = startString.length;
   if (stringLength > intLength) {
