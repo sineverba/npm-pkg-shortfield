@@ -1,4 +1,8 @@
-# 1.2.0
+# 1.3.0
++ Upgrade dependencies
++ Move to TypeScript
+
+## 1.2.0
 + Refactor Semaphore
 + Upgrade dependencies + Dropped support for Node 10
 
