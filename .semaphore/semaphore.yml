@@ -45,6 +45,7 @@ blocks:
         - name: Prettier
           commands:
             - rm -r node_modules/
+            - nvm install
             - nvm use
             - npm ci
             - npm run prettier
