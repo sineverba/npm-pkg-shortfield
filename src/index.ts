@@ -3,7 +3,7 @@
  * @param String startString The start string
  * @param int intLength The needed length
  */
-const getShortString = (startString, intLength = 10) => {
+export const Shortener = (startString: string, intLength: number = 10) => {
   if (!startString) {
     throw new Error('Missing startString');
   }
@@ -13,5 +13,3 @@ const getShortString = (startString, intLength = 10) => {
   }
   return startString;
 };
-
-module.exports = getShortString;
