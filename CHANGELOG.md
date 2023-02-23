@@ -1,4 +1,7 @@
-# 2.0.0
+# Next version
++ Upgrade dependencies
+
+## 2.0.0
 + Change usage. Fix instructions
 
 ## 1.3.1
