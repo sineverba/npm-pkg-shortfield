@@ -1,4 +1,7 @@
-# 1.3.1
+# 2.0.0
++ Change usage. Fix instructions
+
+## 1.3.1
 + Fix missing dist
 
 ## 1.3.0
