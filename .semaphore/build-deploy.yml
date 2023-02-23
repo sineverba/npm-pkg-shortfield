@@ -17,5 +17,7 @@ blocks:
         - name: Deploy to NPM
           commands:
             - checkout
+            - npm ci
+            - npm run build
             - mv npmrc.txt .npmrc
             - npm publish
