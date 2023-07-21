@@ -1,4 +1,9 @@
-# 2.0.0
+# 2.1.0
++ Upgrade dependencies
++ Add prettier
++ Upgrade dependencies
+
+## 2.0.0
 + Change usage. Fix instructions
 
 ## 1.3.1
