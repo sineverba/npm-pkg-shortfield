@@ -1,6 +1,7 @@
 # Next version
 + Upgrade dependencies
 + Add prettier
++ Upgrade dependencies
 
 ## 2.0.0
 + Change usage. Fix instructions
