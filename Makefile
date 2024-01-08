@@ -1,10 +1,9 @@
-SONARSCANNER_VERSION=4.8.0
+SONARSCANNER_VERSION=5.0.1
 
 sonar:
 	docker run \
 		--rm \
 		-it \
-		--user="$(id -u):$(id -g)" \
 		--name sonarscanner \
 		-v $(PWD):/usr/src \
 		-e SONAR_HOST_URL=$(SONAR_HOST_URL) \
@@ -14,6 +13,6 @@ sonar:
 
 upgrade:
 	npx ncu -u
-	npx browserslist@latest --update-db
+	npx update-browserslist-db@latest
 	npm install
 	npm audit fix
