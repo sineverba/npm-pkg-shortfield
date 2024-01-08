@@ -9,7 +9,7 @@ agent:
 global_job_config:
   env_vars:
     - name: SONARSCANNER_VERSION
-      value: 4.8.0
+      value: 5.0.1
   secrets:
     - name: ACCESS_TOKENS
 
@@ -38,7 +38,7 @@ blocks:
         - name: Test
           matrix:
             - env_var: NODE_VERSION
-              values: [ "14", "16", "18" ]
+              values: [ "14", "16", "18", "20" ]
           commands:
             - sem-version node $NODE_VERSION
             - npm run test
@@ -70,8 +70,8 @@ blocks:
             docker run 
             --rm
             -e SONAR_HOST_URL="https://sonarcloud.io"
-            -e SONAR_LOGIN=$SONAR_TOKEN
-            -v "/home/semaphore/npm-pkg-shortfield:/usr/src"
+            -e SONAR_TOKEN=$SONAR_TOKEN
+            -v $PWD:/usr/src
             sonarsource/sonar-scanner-cli:$SONARSCANNER_VERSION
 
 promotions:

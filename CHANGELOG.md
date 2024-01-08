@@ -1,4 +1,10 @@
-# 2.1.0
+# 2.2.0
++ Refactor Semaphore
++ Upgrade dependencies
++ Upgrade dependencies
++ Add Cucumber
+
+## 2.1.0
 + Upgrade dependencies
 + Add prettier
 + Upgrade dependencies
