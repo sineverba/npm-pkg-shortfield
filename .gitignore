@@ -1,11 +1,6 @@
-coverage
-node_modules
-build
-npm-debug.log
-.env
-.DS_Store
-.nyc_output
+.nyc_output/
 .scannerwork/
-data/
-lib/
+.test_report/
+coverage/
 dist/
+node_modules/
