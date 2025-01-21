@@ -13,7 +13,7 @@ Useful in tables with long strings.
 E.g. "This is a long string" will return "This is a ..."
 
 ## Installation
-`npm install @sineverba/shortfield`
+`npm install shortfield`
 
 ## Usage
 
