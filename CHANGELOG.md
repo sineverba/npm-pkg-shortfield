@@ -2,6 +2,9 @@
 + Refactor repository
 + Upgrade dependencies
 
+## 2.2.1
++ Fix project name
+
 ## 2.2.0
 + Refactor Semaphore
 + Upgrade dependencies

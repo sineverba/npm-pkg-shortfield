@@ -1,6 +1,6 @@
 {
   "name": "shortfield",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Make short a long string, concatenated with three dots",
   "files": [
     "dist/**/*"
