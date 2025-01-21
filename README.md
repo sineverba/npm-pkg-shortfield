@@ -13,7 +13,7 @@ Useful in tables with long strings.
 E.g. "This is a long string" will return "This is a ..."
 
 ## Installation
-`npm install @sineverba/shortfield`
+`npm install shortfield`
 
 ## Usage
 
@@ -26,9 +26,3 @@ console.log(shorted); // returns This is a ...
 var shorted = Shortener("This is a long string", 4);
 console.log(shorted); // returns This...
 ```
-
-## Tests
-
-`npm run test` for simple test
-
-`npm run coverage` for coverage

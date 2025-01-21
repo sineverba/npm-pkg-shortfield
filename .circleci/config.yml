@@ -1,15 +1,24 @@
 version: 2.1
 jobs:
-
   test:
     docker:
-      - image: cimg/node:20.10.0
-
+      - image: cimg/node:20.14.0
+    resource_class: medium
+    environment:
+      NPM_VERSION: 10.8.1
     steps:
       - checkout
-      - run: npm ci
-      - run: npm run test
-
+      - run:
+          name: "Setup NPM version"
+          command: npm install npm@${NPM_VERSION}
+      - run:
+          name: "Setup project"
+          command: npm ci
+      - run:
+          name: "Run test"
+          command: npx jest
+      - store_test_results:
+          path: ./.test_report
 workflows:
   version: 2
   test:
